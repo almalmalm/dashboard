@@ -1,12 +1,13 @@
-import './App.css';
-import Header from './components/Header';
+import { Route, Routes } from 'react-router';
+import Dashboard from './components/Dashboard/Dashboard';
+import { Layout } from './components/Layout/Layout';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Header />
-    </>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </Layout>
   );
 }
-
-export default App;

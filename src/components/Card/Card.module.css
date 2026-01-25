@@ -31,9 +31,9 @@
 }
 
 .positive {
-  color: var(--color-primary);
+  color: var(--color-positive);
 }
 
 .negative {
-  color: var(--color-secondary);
+  color: var(--color-negative);
 }

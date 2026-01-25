@@ -1,3 +1,4 @@
+import { Charts } from '../Charts/Charts';
 import Statistic from '../Statistic/Statistic';
 import styles from './Dashboard.module.css';
 
@@ -6,6 +7,7 @@ export default function Dashboard() {
     <div className={styles.container}>
       <h3>Dashboard</h3>
       <Statistic />
+      <Charts />
     </div>
   );
 }

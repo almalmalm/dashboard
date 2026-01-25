@@ -1,6 +1,14 @@
 :root {
   --color-primary: #d92929;
+  --color-primary-light: #d9292987;
   --color-secondary: #798897;
+  --color-positive: #71b714;
+  --color-negative: #cf1c22;
+  --color-new: #c61e60;
+  --color-fresh: #993a82;
+  --color-notify: #624a89;
+  --color-update: #364e77;
+  --color-old: #2f4858;
 
   --color-shadow-primary: #faf4f4;
 

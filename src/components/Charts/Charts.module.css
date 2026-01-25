@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+
+  gap: 28px;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 28px;
+}
+
+@media (max-width: 768px) {
+  .group {
+    grid-template-columns: 1fr;
+  }
+}

@@ -16,3 +16,28 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.tooltipContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  font-size: 12px;
+  border-radius: 12px;
+  padding: 12px;
+
+  background: var(--color-white);
+  border: 1px solid var(--color-shadow-primary);
+  box-shadow: 0 8px 16px var(--color-text-shadow);
+  color: var(--color-text-light);
+}
+
+.tooltipValues {
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltipLabel,
+.tooltipValue {
+  color: var(--color-primary-light);
+}

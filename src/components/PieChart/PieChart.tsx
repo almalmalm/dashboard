@@ -1,5 +1,6 @@
 import { PieChart as Chart, Legend, Pie, ResponsiveContainer, Tooltip } from 'recharts';
 import styles from './PieChart.module.css';
+import { PieChartTooltip } from './PieChartTooltip';
 
 export default function PieChart() {
   const data = [
@@ -20,7 +21,7 @@ export default function PieChart() {
             data={data}
             innerRadius="60%"
             outerRadius="100%"
-            cornerRadius="10%"
+            cornerRadius="5%"
             paddingAngle={1}
             dataKey="value"
             isAnimationActive={true}
@@ -47,7 +48,7 @@ export default function PieChart() {
               );
             }}
           />
-          <Tooltip />
+          <Tooltip content={<PieChartTooltip />} />
         </Chart>
       </ResponsiveContainer>
     </div>

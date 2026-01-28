@@ -1,6 +1,7 @@
 import { Area, AreaChart as Chart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import styles from './AreaChart.module.css';
 import { formatNumbersToThousands } from '../../helpers/formatNumbersToThousands/formatNumbersToThousands';
+import { AreaChartTooltip } from './AreaChartTooltip';
 
 export const AreaChart = () => {
   const data = [
@@ -49,7 +50,7 @@ export const AreaChart = () => {
         <Chart responsive data={data}>
           <XAxis dataKey="name" axisLine={false} tickLine={false} />
           <YAxis width="auto" tickFormatter={formatNumbersToThousands} axisLine={false} tickLine={false} />
-          <Tooltip />
+          <Tooltip content={<AreaChartTooltip />} />
           <Area
             type="monotone"
             dataKey="unregistered"

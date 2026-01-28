@@ -1,6 +1,7 @@
 import { Bar, BarChart as Chart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import styles from './BarChart.module.css';
 import { formatNumbersToThousands } from '../../helpers/formatNumbersToThousands/formatNumbersToThousands';
+import { BarChartTooltip } from './BarChartTooltip';
 
 export const BarChart = () => {
   const data = [
@@ -46,7 +47,7 @@ export const BarChart = () => {
           <Bar dataKey="value" radius={[10, 10, 0, 0]} />
           <XAxis dataKey="name" axisLine={false} tickLine={false} />
           <YAxis width="auto" tickFormatter={formatNumbersToThousands} axisLine={false} tickLine={false} />
-          <Tooltip />
+          <Tooltip content={<BarChartTooltip />} />
         </Chart>
       </ResponsiveContainer>
     </div>

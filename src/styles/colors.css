@@ -9,11 +9,14 @@
   --color-notify: #624a89;
   --color-update: #364e77;
   --color-old: #2f4858;
+  --color-white: #ffffff;
 
   --color-shadow-primary: #faf4f4;
 
   --color-stroke: #00000010;
 
   --color-text-primary: #000000;
+  --color-text-shadow: #00000010;
+  --color-text-light: #333333;
   --color-text-secondary: #594949;
 }

@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running ESLint on staged files..."
+npx lint-staged
+
+echo "Running unit tests..."
+npm run test 

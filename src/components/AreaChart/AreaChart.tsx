@@ -1,4 +1,4 @@
-import { Area, AreaChart as Chart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart as Chart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import styles from './AreaChart.module.css';
 import { formatNumbersToThousands } from '../../helpers/formatNumbersToThousands/formatNumbersToThousands';
 

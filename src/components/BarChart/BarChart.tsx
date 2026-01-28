@@ -1,4 +1,4 @@
-import { Bar, BarChart as Chart, Legend, Pie, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart as Chart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import styles from './BarChart.module.css';
 import { formatNumbersToThousands } from '../../helpers/formatNumbersToThousands/formatNumbersToThousands';
 

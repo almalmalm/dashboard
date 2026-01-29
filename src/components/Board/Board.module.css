@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 24px;
+  gap: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: start;
+
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
